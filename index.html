@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Backend Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Abdellah Hammou</h1>
+      <ul>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates-container">
+      <!-- Certificate 1 -->
+      <div class="certificate">
+        <img src="certs/META FRONTEND.jpg" alt="Certificate 1 Preview">
+        <div class="certificate-details">
+          <h3>Meta frontend Developer Professional Certificate</h3>
+          <p>Issued by: Meta via Coursera</p>
+          <p>Year: 2024</p>
+          <div class="certificate-actions">
+            <button class="view-certificate" data-img="certs/META FRONTEND.jpg">View Certificate</button>
+            <a href="https://www.coursera.org/account/accomplishments/professional-cert/3SBQVS4KB05I"  >Verify</a>
+          </div>
+
+        </div>
+      </div>
+      
+      <!-- Certificate 2 -->
+      <div class="certificate">
+        <img src="certs/IBM BACKEND .jpg" alt="Certificate 2 Preview">
+        <div class="certificate-details">
+          <h3>IBM backend Developer Professional Certificate </h3>
+          <p>Issued by: IBM via Coursera</p>
+          <p>Year: 2025</p>
+          <div class="certificate-actions">
+
+          <button class="view-certificate" data-img="certs/IBM BACKEND .jpg">View Certificate</button>
+          <a href="https://www.coursera.org/account/accomplishments/specialization/J6WJROCIUUD0" >Verify</a>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Modal for Certificate Image Preview -->
+<div id="image-modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-image">
+  <div id="caption"></div>
+</div>
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="project">
+        <div class="video-preview">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/awJUwcUxhQ0" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <h3>FullStack Market-place Project</h3>
+        <p>Technologies: Laravel, React, MySQL</p>
+        <a href="https://github.com/abdellah404/marketplace-project" target="_blank">GitHub Link</a>
+      </div>
+
+     <!-- Project 2 using YouTube video preview -->
+<div class="project">
+  <div class="video-preview">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/djr8ca9lRqA" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </div>
+  <h3>FullStack GiftLink Project</h3>
+  <p>Technologies: React js , Express js, Node js, MongoDB </p>
+  <a href="https://github.com/abdellah404/fullstack-capstone-project" target="_blank">GitHub Link</a>
+</div>
+  </section>
+  
+  <section id="contact">
+  <h2>Contact</h2>
+  <form id="contact-form">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+    <button type="submit">Send</button>
+  </form>
+  <p id="form-status"></p>
+</section>
+  
+  <footer>
+    <p>&copy; 2025 Abdellah's Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
